@@ -1,0 +1,100 @@
+/*
+Beige: #EDE6D8
+Rojo: #DE1A1A
+Gris: #343E3D
+Gris footer: #9B9B93
+Blanco: #fffff
+Negro: #000000
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/*INICIO*/
+/*HEADER*/
+.luciana-bg-body{
+    background-color: #EDE6D8;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #DE1A1A;
+}
+.nav-link {
+    color: #de1a1ab3;
+}
+.luciana-nav-item{
+    text-align: center;
+}
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav {
+        width: 100%;
+        justify-content: space-around;
+
+    }
+}
+.slogan{
+    background-image: url(../assets/slogan-img.jpg);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.slogan p{
+    color:#ffffff;
+    font-size: 2.5em;
+}
+/*MAIN*/
+h1{
+    color: #DE1A1A;
+}
+/*ASIDE*/
+h2{
+    color: #DE1A1A;
+}
+.texto-nosotros p{
+    text-align: justify;
+}
+/*FOOTER*/
+.pie{
+    background-color: #9B9B93;
+}
+.redes-enlaces{
+    width: 70%;
+}
+.delivery-telefono p{
+    color:#DE1A1A;
+    font-size: 1.4em;
+    margin-bottom: 0px;
+}
+.pie-final p{
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}
+/*CONTACTO*/
+h4{
+    color: #068d33;
+}
+.sucursales-mapas p{
+    font-size: 0.9em;
+}
+.accordion{
+    --bs-accordion-color: #000000; 
+    --bs-accordion-btn-color: #000000; 
+    --bs-accordion-active-color: #000000;  
+    --bs-accordion-btn-focus-box-shadow: #59565694 ;
+    --bs-accordion-active-bg: #b1acac94;
+}
+.formulario-form{
+    width: 80%;
+}
+
+
+
+
+  
+
+
+
+
+

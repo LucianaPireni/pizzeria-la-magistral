@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!--Enlace BS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <!--Enlace CSS-->
+        <link rel="stylesheet" href="./css/style.css">
+        <title>LA MAGISTRAL</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!--HEADER-->
+            <header class="encabezado row">
+                <nav class="navbar navbar-expand-lg luciana-bg-body">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html"> 
+                            <img src="./assets/logo-la-magistral.png" alt="Bootstrap" width="200">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="luciana-nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                                </li>
+                                <li class="luciana-nav-item">
+                                    <a class="nav-link" href="./pages/nuestro-menu.html">NUESTRO MENU</a>
+                                </li>
+                                <li class="luciana-nav-item">
+                                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--Slogan sobre imagen de fondo-->
+                <div class="slogan">
+                    <p class="text-center">Pasión por la Pizza desde 1992</p>
+                </div>
+            </header>
+            <!--MAIN-->
+            <main class="promociones row">
+                <!--Titulo Promociones-->
+                <section class="col-lg-12 col-md-12 col-12 promos">
+                    <div class="d-flex justify-content-center mt-3 titulo-promociones">
+                        <h1>Promociones</h1>
+                    </div>
+                    <!--Promos-->  
+                    <div class="d-flex flex-xl-nowrap flex-md-wrap flex-wrap justify-content-evenly promociones">
+                        <img src="./assets/promo-1.png" class="img-fluid m-3 rounded" alt="promo-1">
+                        <img src="./assets/promo-2.png" class="img-fluid m-3 rounded" alt="promo-2">
+                        <img src="./assets/promo-3.png" class="img-fluid m-3 rounded" alt="promo-3">
+                    </div>
+                </section>
+            </main>
+            <!--ASIDE-->         
+            <aside class="d-flex flex-xl-nowrap flex-md-wrap flex-wrap justify-content-evenly mt-5 mb-5 nosotros-y-menu row">
+                <!--Nosotros-->
+                <section class="col-lg-6 col-md-12 col-12 texto-nosotros">
+                    <h2>Nosotros</h2>
+                    <p>LA MAGISTRAL es un lugar donde la tradición italiana se fusiona con el sabor porteño. Fundada en 1992 por una familia de descendientes italianos, nuestra historia comenzó en el corazón del barrio de Recoleta. Desde entonces, hemos trabajado con pasión y dedicación para ofrecerles las mejores pizzas tradicionales, empanadas, canastitas y una amplia variedad de postres, todo hecho con ingredientes frescos y de calidad.<br><br>Con el tiempo, nuestra pasión por la pizza nos llevó a expandirnos, y hoy contamos con tres sucursales en los barrios más emblemáticos de la ciudad: Recoleta, Belgrano y Palermo, donde continuamos brindando a nuestros clientes una experiencia auténtica y deliciosa que ya es parte de la tradición de Buenos Aires.<br><br>
+                    Además de nuestro menú, ofrecemos la opción de reservar espacios para eventos privados, creando el ambiente ideal para compartir celebraciones con los que más querés. Cada uno de nuestros locales está diseñado para que te sientas cómodo y disfrutes de una velada memorable. Vení y dejate seducir por el auténtico sabor de nuestras pizzas, rodeado de un ambiente cálido y familiar. ¡Te esperamos para que disfrutes de una experiencia gastronómica inigualable!
+                    </p>
+                </section>
+                <!--Card Menu-->
+                <section class="col-lg-6 col-md-12 col-12 d-flex justify-content-center tarjeta-menu">
+                    <div class="border border-danger border-3 card" style="width: 36rem;">
+                        <img src="./assets/nosotros-img.jpg" class="card-img-top" alt="conocer-menu">
+                        <div class="card-body">
+                        <h5 class="card-title">Conocé nuestro Menú</h5>
+                        <p class="card-text">Mirá todas las variedades de platos, bebidas y postres que tenemos para vos.</p>
+                        <a href="./pages/nuestro-menu.html" class="btn btn-danger btn-lg">VER MENÚ</a>
+                        </div> 
+                    </div>
+                </section>
+            </aside>   
+            <!--FOOTER>-->
+            <footer class="d-flex flex-xl-wrap flex-md-wrap flex-wrap  pie row">
+                <!--Logo con enlace a la Home-->
+                <section class="d-flex justify-content-lg-start justify-content-md-start justify-content-center col-lg-4 col-md-4 col-12 logo-final">
+                    <a href="./index.html"><img src="./assets/logo-la-magistral.png" class="img-fluid" alt="logo"></a>
+                </section>
+                <!--Section Enlaces a Redes--> 
+                <section class="d-flex flex-column align-items-center col-lg-4 col-md-4 col-12 mt-3 mb-3 redes">
+                    <div class="redes-titulo">
+                        <h6>NUESTRAS REDES</h6>
+                    </div>
+                    <div class="d-flex flex-row justify-content-evenly redes-enlaces">
+                        <a href="https://instagram.com"><img src="./assets/logo-ig-negro.png"></a>
+                        <a href="https://facebook.com"><img src="./assets/logo-facebook-negro.png"></a>
+                        <a href="https://tiktok.com"><img src="./assets/logo-tiktok-negro.png"></a>
+                    </div>
+                </section>
+                <!--Section Delivery-->
+                <section class="d-flex flex-column align-items-center col-md-4 col-12 mt-3 mb-3 delivery">
+                    <div class="delivery-titulo">
+                        <h6>DELIVERY</h6>
+                    </div>
+                    <div class="d-flex align-items-center delivery-telefono">
+                        <img src="./assets/logo-whatsapp-negro.png">
+                        <p class="ms-2">11 3444 3434</p>       
+                    </div> 
+                </section>
+                <!--Section pie copyright-->
+                <section class="d-flex justify-content-center col-lg-12 col-md-12 col-md-12 pie-final">
+                    <p>Copyright © 2025 - La Magistral</p>
+                </section>
+            </footer>
+        </div>
+        <!--Script BS-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    </body>
+</html>
