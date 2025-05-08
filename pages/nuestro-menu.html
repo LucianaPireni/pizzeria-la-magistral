@@ -14,13 +14,15 @@
         <title>NUESTRO MENU</title>
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="grilla-menu">
             <!--HEADER-->
-            <header class="encabezado row">
+            <header class="encabezado">
                 <nav class="navbar navbar-expand-lg luciana-bg-body">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="./index.html"> 
-                            <img src="../assets/logo-la-magistral.png" alt="Bootstrap" width="200">
+                            <figure class="logo">
+                                <img src="../assets/logo-la-magistral.png" alt="Bootstrap" width="200">
+                            </figure>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -42,22 +44,20 @@
                 </nav>
             </header>
         <!--MAIN-->
-        <main class="nuestro-menu row">
-            <section class="col-lg-12 col-md-12 col-12 carta">
-                <div class="d-flex justify-content-center mt-3 titulo-carta">
+        <main class="nuestro-menu">
+                <div class="titulo-carta">
                     <h1>Nuestro Menú</h1>
                 </div>
-                <div class="d-flex flex-xl-nowrap flex-md-wrap flex-wrap justify-content-evenly carta-flyers">
-                    <img src="../assets/pizzas-img.png" class="img-fluid m-3 rounded" alt="pizzas">
-                    <img src="../assets/empanadas-img.png" class="img-fluid m-3 rounded" alt="empanadas">
-                    <img src="../assets/canastitas-img.png" class="img-fluid m-3 rounded" alt="canastitas">
-                    <img src="../assets/bebidas-img.png" class="img-fluid m-3 rounded" alt="otros">  
+                <div class="carta-flyers">
+                    <div><img src="../assets/pizzas-img.png" class="pizzas" alt="pizzas"></div>
+                    <div><img src="../assets/empanadas-img.png" class="empanadas" alt="empanadas"></div>
+                    <div><img src="../assets/canastitas-img.png" class="canastitas" alt="canastitas"></div>
+                    <div><img src="../assets/bebidas-img.png" class="otros" alt="otros"></div>
                 </div>
-            </section>    
+               
         </main>
         <!--ASIDE-->
-        <aside class="variedades row">
-            <section class="d-flex flex-column align-items-center col-lg-12 col-md-12 col-12 mt-3 mb-5 postres">
+        <aside class="postres">
                 <div class="titulo-postres">
                     <h2>Postres</h2>
                 </div>
@@ -89,38 +89,39 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            </section>
         </aside> 
         <!--FOOTER>-->
-        <footer class="d-flex flex-xl-wrap flex-md-wrap flex-wrap  pie row">
+        <footer class="pie-nm">
             <!--Logo con enlace a la Home-->
-            <section class="d-flex justify-content-lg-start justify-content-md-start justify-content-center col-lg-4 col-md-4 col-12 logo-final">
-                <a href="../index.html"><img src="../assets/logo-la-magistral.png" class="img-fluid" alt="logo"></a>
-            </section>
-            <!--Section Enlaces a Redes--> 
-            <section class="d-flex flex-column align-items-center col-lg-4 col-md-4 col-12 mt-3 mb-3 redes">
-                <div class="redes-titulo">
-                    <h6>NUESTRAS REDES</h6>
-                </div>
-                <div class="d-flex flex-row justify-content-evenly redes-enlaces">
-                    <a href="https://instagram.com"><img src="../assets/logo-ig-negro.png"></a>
-                    <a href="https://facebook.com"><img src="../assets/logo-facebook-negro.png"></a>
-                    <a href="https://tiktok.com"><img src="../assets/logo-tiktok-negro.png"></a>
-                </div>
-            </section>
-            <!--Section Delivery-->
-            <section class="d-flex flex-column align-items-center col-lg-4 col-md-4 col-12 mt-3 mb-3 delivery">
-                <div class="delivery-titulo">
-                    <h6>DELIVERY</h6>
-                </div>
-                <div class="d-flex align-items-center delivery-telefono">
-                    <img src="../assets/logo-whatsapp-negro.png">
-                    <p class="ms-2">11 3444 3434</p>        
-                </div> 
+            <section class="pie-elem-nm">
+                <article class="logo-final-nm">
+                    <a href="../index.html"><img src="../assets/logo-la-magistral.png" class="logo-final-img" alt="logo"></a>
+                </article>
+                <!--Section Enlaces a Redes--> 
+                <article class="redes-nm">
+                    <div class="redes-titulo">
+                        <h6>NUESTRAS REDES</h6>
+                    </div>
+                    <div class="redes-enlaces-nm">
+                        <a href="https://instagram.com"><img src="../assets/logo-ig-negro.png"></a>
+                        <a href="https://facebook.com"><img src="../assets/logo-facebook-negro.png"></a>
+                        <a href="https://tiktok.com"><img src="../assets/logo-tiktok-negro.png"></a>
+                    </div>
+                </article>
+                <!--Section Delivery-->
+                <article class="delivery-nm">
+                    <div class="delivery-titulo">
+                        <h6>DELIVERY</h6>
+                    </div>
+                    <div class="delivery-telefono-nm">
+                        <img src="../assets/logo-whatsapp-negro.png">
+                        <p>11 3444 3434</p>        
+                    </div> 
+                </article>
             </section>
             <!--Section pie copyright-->
-            <section class="d-flex justify-content-center col-lg-12 col-md-12 col-md-12 pie-final">
-                <p>Copyright © 2025 - La Magistral</p>
+            <section class="pie-final-nm">
+                <p>&copy; 2025 - La Magistral. Todos los derechos reservados</p>
             </section>
         </footer>
     <!--Script BS-->

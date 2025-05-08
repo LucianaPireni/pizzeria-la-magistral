@@ -1,0 +1,54 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/*Inicio*/
+.slogan{
+    background-image: url(../assets/slogan-img.jpg);
+    @include cover-center;
+    p{
+        color: $color-3;
+        font-size: 2.5em;
+    }
+}  
+/*Nuestro Menú*/
+.titulo-carta{
+    margin: 10px;
+    text-align: center;
+}
+.carta-flyers{
+    @include flex-space-evenly;
+    flex-wrap: wrap;   
+}
+.postres{
+    grid-area: postre;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @include flex-center;
+    flex-direction: column; 
+    .titulo-postres{
+        @extend .titulo-carta;
+    }
+    .carousel{
+        display: flex;
+        align-self: center;
+    }
+}
+/*Contacto*/  
+.sucursales-mapas p{
+    font-size: 0.9em;
+}
+.accordion{
+    --bs-accordion-color: #000000; 
+    --bs-accordion-btn-color: #000000; 
+    --bs-accordion-active-color: #000000;  
+    --bs-accordion-btn-focus-box-shadow: #59565694 ;
+    --bs-accordion-active-bg: #b1acac94;
+}
+.formulario-form{
+    width: 80%;
+}
+
+
+
+    
+  

@@ -1,100 +1,455 @@
-/*
-Beige: #EDE6D8
-Rojo: #DE1A1A
-Gris: #343E3D
-Gris footer: #9B9B93
-Blanco: #fffff
-Negro: #000000
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+@charset "UTF-8";
+/*Mixins flex*/
+/*Mixins animations y transforms*/
+/*Mixins image*/
+/*Animations*/
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-/*INICIO*/
-/*HEADER*/
-.luciana-bg-body{
-    background-color: #EDE6D8;
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #DE1A1A;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.nav-link {
-    color: #de1a1ab3;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.luciana-nav-item{
-    text-align: center;
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-nav {
-        width: 100%;
-        justify-content: space-around;
+/*Header*/
+.logo {
+  animation: slideInLeft 1s ease-out forwards;
+}
 
-    }
+/*Inicio*/
+.slogan {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
 }
-.slogan{
-    background-image: url(../assets/slogan-img.jpg);
-    height: 200px;
+
+.promo-1 {
+  animation: slideInLeft 1s ease forwards;
+}
+@media (max-width: 768px) {
+  .promo-1 {
+    animation: none;
+  }
+}
+
+.promo-2 {
+  animation: fadeInUp 1s ease forwards;
+}
+@media (max-width: 768px) {
+  .promo-2 {
+    animation: none;
+  }
+}
+
+.promo-3 {
+  animation: slideInRight 1s ease forwards;
+}
+@media (max-width: 768px) {
+  .promo-3 {
+    animation: none;
+  }
+}
+
+/*Nuestro Menú*/
+.nosotros-y-menu {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.pizzas {
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.empanadas {
+  animation: slideInLeft 1s ease forwards;
+  animation-delay: 0.2s;
+}
+@media (max-width: 768px) {
+  .empanadas {
+    animation-delay: 0.4s;
+  }
+}
+
+.canastitas {
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 0.2s;
+}
+@media (max-width: 768px) {
+  .canastitas {
+    animation-delay: 0.4s;
+  }
+}
+
+.otros {
+  animation: slideInRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.postres {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/*Contacto*/
+.sucursales-principal {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.eventos {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/*Footer*/
+.logo-final {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.redes-enlaces a {
+  display: inline-block;
+  transition: trasform 0.3s ease;
+}
+.redes-enlaces a:hover {
+  animation: pulse 0.6s ease;
+}
+
+.redes-enlaces-nm a {
+  display: inline-block;
+  transition: trasform 0.3s ease;
+}
+.redes-enlaces-nm a:hover {
+  animation: pulse 0.6s ease;
+}
+
+/*Inicio*/
+.promociones > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.promociones > div:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 20px 10px 16px rgba(0, 0, 0, 0.7294117647);
+}
+
+/*Nuestro Menú*/
+.pizzas {
+  margin: 10px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pizzas:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7294117647);
+}
+
+.empanadas {
+  margin: 10px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.empanadas:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7294117647);
+}
+
+.canastitas {
+  margin: 10px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.canastitas:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7294117647);
+}
+
+.otros {
+  margin: 10px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.otros:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7294117647);
+}
+
+/*Footer*/
+.delivery-telefono {
+  transition: transform 0.5s ease;
+}
+.delivery-telefono:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.delivery-telefono-nm {
+  transition: transform 0.5s ease;
+}
+.delivery-telefono-nm:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #DE1A1A;
+}
+
+h2 {
+  color: #DE1A1A;
+}
+
+h4 {
+  color: #068d33;
+}
+
+/*INICIO Y CONTACTO usando Bootstrap*/
+.encabezado {
+  background-color: #EDE6D8;
+  grid-area: cabe;
+}
+.encabezado .navbar-nav .nav-link.active, .encabezado .navbar-nav .nav-link.show {
+  color: #DE1A1A;
+}
+.encabezado .luciana-nav-item {
+  text-align: center;
+}
+.encabezado .nav-link {
+  color: rgba(222, 26, 26, 0.7019607843);
+}
+@media (min-width: 992px) {
+  .encabezado .navbar-expand-lg .navbar-nav {
     width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-.slogan p{
-    color:#ffffff;
-    font-size: 2.5em;
-}
-/*MAIN*/
-h1{
-    color: #DE1A1A;
-}
-/*ASIDE*/
-h2{
-    color: #DE1A1A;
-}
-.texto-nosotros p{
-    text-align: justify;
-}
-/*FOOTER*/
-.pie{
-    background-color: #9B9B93;
-}
-.redes-enlaces{
-    width: 70%;
-}
-.delivery-telefono p{
-    color:#DE1A1A;
-    font-size: 1.4em;
-    margin-bottom: 0px;
-}
-.pie-final p{
-    font-size: 0.8em;
-    margin-bottom: 0px;
-}
-/*CONTACTO*/
-h4{
-    color: #068d33;
-}
-.sucursales-mapas p{
-    font-size: 0.9em;
-}
-.accordion{
-    --bs-accordion-color: #000000; 
-    --bs-accordion-btn-color: #000000; 
-    --bs-accordion-active-color: #000000;  
-    --bs-accordion-btn-focus-box-shadow: #59565694 ;
-    --bs-accordion-active-bg: #b1acac94;
-}
-.formulario-form{
-    width: 80%;
+    justify-content: space-around;
+  }
 }
 
+aside .texto-nosotros p {
+  text-align: justify;
+}
 
+.pie {
+  background-color: #9B9B93;
+}
+.pie .redes-enlaces {
+  width: 70%;
+}
+.pie .delivery-telefono p {
+  color: #DE1A1A;
+  font-size: 1.4em;
+  margin-bottom: 0px;
+}
+.pie .pie-final p {
+  font-size: 0.8em;
+  margin-bottom: 0px;
+}
 
+/*NUESTRO MENU usando Grids*/
+/*Grillas*/
+.grilla-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.15fr 1fr 0.5fr 0.25fr;
+  column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: "cabe cabe cabe cabe" "n-menu n-menu n-menu n-menu" ". postre postre ." "foo foo foo foo";
+}
+@media (max-width: 768px) {
+  .grilla-menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr 2fr 0.3fr 0.5fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-areas: "cabe cabe" "n-menu n-menu" "postre postre" "foo foo";
+  }
+}
+@media (max-width: 320px) {
+  .grilla-menu {
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 0.15fr 3fr 0.4fr 0.1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-areas: "cabe" "n-menu" "postre" "foo";
+  }
+}
 
-  
+/*Nuestro Menu*/
+.nuestro-menu {
+  grid-area: n-menu;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
 
+/*Footer*/
+.pie-nm {
+  grid-area: foo;
+  background-color: #9B9B93;
+  display: flex;
+  flex-direction: column;
+}
+.pie-nm .pie-elem-nm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .pie-nm .pie-elem-nm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pie-nm .logo-final-nm {
+  width: 33%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .pie-nm .logo-final-nm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.pie-nm .logo-final-nm .logo-final-img {
+  width: 100%;
+}
+.pie-nm .redes-nm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+@media (max-width: 768px) {
+  .pie-nm .redes-nm {
+    width: 100%;
+  }
+}
+.pie-nm .redes-nm .redes-enlaces-nm {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.pie-nm .delivery-nm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+@media (max-width: 768px) {
+  .pie-nm .delivery-nm {
+    width: 100%;
+  }
+}
+.pie-nm .delivery-nm .delivery-telefono-nm {
+  display: flex;
+  align-items: center;
+}
+.pie-nm .delivery-nm p {
+  margin: 10px;
+  color: #DE1A1A;
+  font-size: 1.4em;
+}
+.pie-nm .pie-final-nm {
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+}
 
+/*Inicio*/
+.slogan {
+  background-image: url(../assets/slogan-img.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.slogan p {
+  color: #ffffff;
+  font-size: 2.5em;
+}
 
+/*Nuestro Menú*/
+.titulo-carta, .postres .titulo-postres {
+  margin: 10px;
+  text-align: center;
+}
 
+.carta-flyers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
+.postres {
+  grid-area: postre;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.postres .carousel {
+  display: flex;
+  align-self: center;
+}
+
+/*Contacto*/
+.sucursales-mapas p {
+  font-size: 0.9em;
+}
+
+.accordion {
+  --bs-accordion-color: #000000;
+  --bs-accordion-btn-color: #000000;
+  --bs-accordion-active-color: #000000;
+  --bs-accordion-btn-focus-box-shadow: #59565694 ;
+  --bs-accordion-active-bg: #b1acac94;
+}
+
+.formulario-form {
+  width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

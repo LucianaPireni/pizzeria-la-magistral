@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/*Inicio*/
+.promociones>div{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover{
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 20px 10px 16px #000000ba;
+    }
+}
+/*Nuestro Menú*/
+$menu-items: pizzas, empanadas, canastitas, otros;
+
+@each $item in $menu-items {
+  .#{$item} {
+    margin: 10px;
+    border-radius: $border-radius;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05) translateY(-5px);
+        box-shadow: 10px 10px 20px #000000ba;
+    }
+  }
+}
+/*Footer*/
+.delivery-telefono{
+  @include jump;
+}
+.delivery-telefono-nm{
+    @include jump;
+  }
+
