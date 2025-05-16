@@ -336,16 +336,12 @@ aside .texto-nosotros p {
 .pie-nm .logo-final-nm {
   width: 33%;
   display: flex;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .pie-nm .logo-final-nm {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
-}
-.pie-nm .logo-final-nm .logo {
-  width: 100%;
 }
 .pie-nm .redes-nm {
   margin-top: 10px;

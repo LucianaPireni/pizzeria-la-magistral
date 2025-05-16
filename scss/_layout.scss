@@ -107,15 +107,12 @@ aside{
     }
     .logo-final-nm{
         width: 33%;
-        display:flex;
+        @include flex-center;
         
         @media (max-width: 768px) {
             width: 100%;
-            @include flex-center;
         }
-        .logo{
-            width: 100%;   
-        }
+        
     }
     .redes-nm{
         @include flex-column-center;
