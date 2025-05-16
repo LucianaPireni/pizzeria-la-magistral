@@ -2,7 +2,10 @@
 @use 'mixins' as *;
 
 /*Inicio*/
- 
+.logo{
+    width: 200px;
+    height: 150px;
+} 
 .slogan{
     height: 200px;
     .banner-img img{
