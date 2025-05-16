@@ -131,7 +131,7 @@
   animation: fadeInUp 1s ease forwards;
 }
 
-.eventos {
+.preguntas {
   animation: fadeIn 1s ease-in forwards;
 }
 
@@ -399,15 +399,29 @@ aside .texto-nosotros p {
 
 /*Inicio*/
 .slogan {
-  background-image: url(../assets/slogan-img.jpg);
+  height: 200px;
+}
+.slogan .banner-img img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
   height: 200px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
+  object-position: center;
 }
-.slogan p {
+.slogan .banner-slogan {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-size: 2.5rem;
   color: #ffffff;
-  font-size: 2.5em;
+  text-align: center;
+}
+.slogan .banner-slogan .texto-banner {
+  color: #ffffff;
 }
 
 /*Nuestro Menú*/
